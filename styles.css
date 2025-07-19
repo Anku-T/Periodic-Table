@@ -14,6 +14,7 @@
 
 body {
   background-color: var(--bgcolor);
+  overflow-x: hidden;
 }
 h1 {
   text-align: center;
@@ -57,7 +58,7 @@ li {
   padding: 1rem;
   gap: 1%;
 }
-.wrapper .table {
+.table {
   width: 100%;
   justify-items: center;
   overflow-x: scroll;
@@ -67,9 +68,17 @@ li {
   width: 95%;
   display: grid;
   grid-template-columns: repeat(18, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   padding: 1rem;
   gap: 1%;
+}
+.img-centerer {
+  display:flex;
+}
+.mendeleev-table {
+  width: fit-content;
+  max-width: 90%;
+  margin:auto;
 }
 .element {
   width: 3rem;
@@ -90,7 +99,8 @@ li {
   width: 20%;
   height: fit-content;
 }
-.element .atomic-weight {
+.element .atomic-weight,
+.atomic-weight-mendeleev {
   font-size: 0.1em;
   width: 70%;
   display: none;
@@ -300,21 +310,28 @@ li {
 
 .shell-table {
   border: 1px solid var(--section-separator);
-  margin:1rem auto;
+  margin: 1rem auto;
   border-collapse: collapse;
   text-align: center;
 }
 
-.shell-table *{
-  font-size:1.3xrem ;
+.shell-table * {
+  font-size: 1.3xrem;
   color: var(--text-color);
   border-bottom: 2px solid var(--section-separator);
 }
-.shell-table td, .shell-table thead{
-  width:14rem;
-  height:2.5rem;
+.shell-table td,
+.shell-table thead {
+  width: 14rem;
+  height: 2.5rem;
 }
-.aufbau{
+.aufbau {
   margin: 1rem auto;
   width: fit-content;
+  max-width: 95svw;
+}
+footer{
+  background-color: rgba(0, 0, 0, 0.72);
+  height: 3rem;
+  border-top: 2px solid var(--section-separator);
 }
