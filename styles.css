@@ -73,12 +73,12 @@ li {
   gap: 1%;
 }
 .img-centerer {
-  display:flex;
+  display: flex;
 }
 .mendeleev-table {
   width: fit-content;
   max-width: 90%;
-  margin:auto;
+  margin: auto;
 }
 .element {
   width: 3rem;
@@ -330,8 +330,66 @@ li {
   width: fit-content;
   max-width: 95svw;
 }
-footer{
+footer {
   background-color: rgba(0, 0, 0, 0.72);
   height: 3rem;
   border-top: 2px solid var(--section-separator);
+}
+
+/* Mobile-friendly styles for phones of all sizes */
+@media (max-width: 600px) {
+  section,
+  main {
+    width: 95vw;
+    max-width: 95vw;
+    padding: 0;
+    margin: auto;
+    font-size: 1em;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.1em;
+    margin: 0.7em 0;
+    text-align: center;
+  }
+  .group-label.element span:first-child,
+  .group-label.element span:nth-child(2) {
+    font-size: 0.7em;
+    padding: 2px;
+  }
+
+  .legend {
+    font-size: 0.9em;
+    padding: 3px;
+    margin-bottom: 1em;
+  }
+
+  .index {
+    min-width: 700px;
+    width: 95vw;
+    padding: 0.5em;
+    font-size: 0.9em;
+  }
+
+  .shell-table td,
+  .shell-table thead {
+    width: 6rem;
+    height: 2rem;
+    font-size: 0.9em;
+  }
+
+  .aufbau img {
+    max-width: 95vw;
+    height: auto;
+  }
+
+  footer {
+    font-size: 0.9em;
+    height: 2.2rem;
+    width: 100vw;
+    margin: 0;
+  }
 }
