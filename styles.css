@@ -355,6 +355,10 @@ footer {
     margin: 0.7em 0;
     text-align: center;
   }
+  .element,
+  .element *{
+    user-select: none;
+  }
   .group-label.element span:first-child,
   .group-label.element span:nth-child(2) {
     font-size: 0.7em;
